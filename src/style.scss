@@ -1,0 +1,50 @@
+@import "~bootstrap/scss/bootstrap";
+
+// NAVBAR
+.navigation {
+    color: red;
+}
+
+// HOME PAGE
+
+
+
+// WELCOME PAGE
+.image {
+    height: 300px;
+
+    .img1 {
+        background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fthewowstyle.com%2Fwp-content%2Fuploads%2F2015%2F01%2Fnature-images.jpg&f=1&nofb=1');
+
+    }
+
+    .img2 {
+        background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2599594.jpg&f=1&nofb=1');
+    }
+
+    .img3 {
+        background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.wallpapers13.com%2Fwp-content%2Fuploads%2F2016%2F01%2FCool-and-Beautiful-Nature-desktop-wallpaper-image-2560X1600.jpg&f=1&nofb=1');
+    }
+
+    .img4 {
+        background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Fe%2Fa%2Fc%2F460547.jpg&f=1&nofb=1');
+    }
+
+    .img5 {
+        background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2015%2F12%2F194647-beach-island-nature-landscape.jpg&f=1&nofb=1');
+    }
+}
+
+.welcome-text {
+    color: black;
+    border: 10px solid black;
+    width: fit-content;
+    padding: 20px 60px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    font-weight: bold;
+    font-size: 80px;
+    background-color: rgba(128, 128, 128, 0.352);
+    transform: translate(-50%, -50%);
+}
