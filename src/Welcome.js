@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss';
+import './Scss/style.scss';
 import { Link } from 'react-router-dom';
 
 const Welcome = () => {
