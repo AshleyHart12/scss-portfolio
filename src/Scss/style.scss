@@ -1,15 +1,34 @@
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;1,300&display=swap');
-@import './variables';
+@import './_variables';
+@import './mixins';
 
 body {
     font-family: 'Kanit', sans-serif;
 } 
 
+html {
+    scroll-behavior: smooth;
+  }
+
+// GLOBALS 
+.sectionTitle {
+    @include section-title;
+}
+
+.section-container {
+    height: 100vh;
+}
+
+// Button Primary
 .btn {
-    padding: 2px 10px;
+    padding: 5px 15px;
     border: 1px solid $secondary-color;
     border-radius: 2px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 5rem;
 
     &:disabled {
         opacity: .5;
@@ -26,7 +45,38 @@ body {
     }
 }
 
+// Button Secondary
+
 // NAVBAR
+.navbar {
+    // position: fixed;
+    // top: 0;
+}
+
+// Parallax Page
+div[class*='bgimg'] {
+    position: relative;
+    opacity: .65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F11%2F35%2FMVeijS.png&f=1&nofb=1');
+    height: 200px;
+}
+
+.bgimg-2 {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.outofhours-kidsclub.com%2Fwp-content%2Fuploads%2F2014%2F09%2Fgeneric-background-768x480.jpg&f=1&nofb=1');
+    height: 200px;
+}
+
+.bgimg-3 {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcsengineermag.com%2Fwp-content%2Fuploads%2F2019%2F06%2Fbackground_generic_default_image.jpg&f=1&nofb=1');
+    height: 200px;
+}
 
 
 // CONTACT FORM
@@ -40,10 +90,18 @@ body {
 }
 
 #contact-form-container {
-    width: 600px;
+    max-width: 70vw;
     font-size: 25px;
     font-weight: 900;
     padding: 20px;
+}
+
+.form-control {
+    @include contact-form-boxes;
+}
+
+.form-label {
+    color: white;
 }
 
 #connect-title {
@@ -55,51 +113,33 @@ body {
     // box-shadow: inset 10px 5px 5px gray;
 }
 
+#contact-container {
+    background-color: $text-color;
+}
+
+
 // HOME PAGE
-.homepage-image {
-    position: relative;
-
-    &:hover {
-        transform: scale(1.2);
-        box-shadow: 5px 5px 10px rgb(158, 156, 156);
-    }
-
-    &#img1 {
-        width: 200px;
-    }
-
-    &#img2 {
-        width: 250px;
-        right: 0;
-    }
-
-    &#img3 {
-        width: 175px;
-        top: 10px;
-        left: 20px;
-    }
-
-    &#img4 {
-        width: 200px;
-        top: -50px;
-    }
-
-    &#img5 {
-        width: 225px;
-    }
-
-    &#img6 {
-        width: 195px;
-        top: -50px;
-        right: 0px;
-    }
+#homepage-container {
+    background-color: $primary-color;
 }
 
-h1 {
-    color: $secondary-color;
-    font-size: 4em;
-    font-weight: 900;
+#homepage-container {
+    background-color: url('');
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
+
+#homepage-container p {
+    margin: 25px 70px;
+}
+
+#homepage-container div{
+    flex-basis: 100%;
+}
+
 
 
 // WELCOME PAGE
@@ -146,4 +186,85 @@ h1 {
 @media screen and (max-width: 479px) {
     .welcome-text{
     font-size: 50px;}
+}
+
+// Experience Page
+// .progressBar-label {
+//     // flex-basis: 100px;
+//     display: flex;
+//     align-items: center;
+// }
+
+// .progressBar-label p {
+//     margin: 10px;
+//     flex-basis: 10%;
+// }
+
+// .progress-bar {
+//     flex-basis: 100%;
+//     background-color: white;
+// }
+
+#experience-container {
+    background-color: $secondary-color;
+}
+.progress-title {
+    font-size: 16px;
+    font-weight: 900;
+    color: $primary-light;
+    margin: 0 0 20px
+}
+
+.progress {
+    // height: 20px;
+    background: #333;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible
+}
+
+.progress .progress-bar {
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s
+}
+
+.progress .progress-value {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    position: absolute;
+    top: -30px;
+    right: -25px
+}
+
+.progress .progress-bar:after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    background: #fff;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    right: -5px;
+    z-index: 1;
+    transform: rotate(35deg)
+}
+
+// Projects Page
+#projects-container {
+    background-color: $accent-color;
+}
+
+.carousel-indicators {
+    position: relative;
+}
+.carousel-indicators{
+    display: none;
+}
+
+.carousel{
+    height: 500px;
 }

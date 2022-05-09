@@ -1,0 +1,11 @@
+@mixin contact-form-boxes {
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(173, 170, 170);
+}
+
+@mixin section-title {
+    color: white;
+    font-size: 14vw;
+    font-weight: 900;
+    text-align: center;
+}
