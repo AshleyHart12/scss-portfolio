@@ -1,20 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import './Scss/style.scss';
 import {Link} from 'react-scroll';
 
 
 const Navigation = () => {
+  const [expanded, setExpanded] = useState(false);
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" expanded={expanded}>
         <Container>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)} />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-            <Link to="home" spy={true} smooth={true} duration={300}>Home</Link>
-              <Link to="experience" spy={true} smooth={true} duration={300}>Experience</Link>
-              <Link to="projects" spy={true} smooth={true} duration={300}>Projects</Link>
-              <Link to="contact" spy={true} smooth={true} duration={300}>Contact</Link>
+            <Link to="home" spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)}>Home</Link>
+              <Link to="experience" spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)}>Experience</Link>
+              <Link to="projects" spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)}>Projects</Link>
+              <Link to="contact" spy={true} smooth={true} duration={300} onClick={() => setExpanded(false)}>Contact</Link>
               {/* <Nav.Link href="./experience">Experience</Nav.Link> */}
               {/* <Nav.Link href="#link">Projects</Nav.Link>
               <Nav.Link href="#link">About Me</Nav.Link>
