@@ -1,9 +1,8 @@
 import React from "react";
 import "./Scss/style.scss";
 import Form from "react-bootstrap/Form";
-import Navigation from "./Navbar";
+// import Navigation from "./Navbar";
 import { Container, Button, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 const ContactForm = () => {
   return (
@@ -30,7 +29,7 @@ const ContactForm = () => {
             rel="noopener noreferrer"
           >
             <img
-              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffindicons.com%2Ffiles%2Ficons%2F2779%2Fsimple_icons%2F2048%2Fgithub_2048_black.png&f=1&nofb=1"
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iconsdb.com%2Ficons%2Fdownload%2Fwhite%2Fgithub-10-256.png&f=1&nofb=1"
               style={{ width: "80px", height: "80px" }}
               alt="link to gituhb profile"
             />
