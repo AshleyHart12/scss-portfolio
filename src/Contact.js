@@ -20,7 +20,7 @@ const ContactForm = () => {
           >
             <img
               src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngimg.com%2Fuploads%2FlinkedIn%2FlinkedIn_PNG24.png&f=1&nofb=1"
-              style={{ width: "60px", height: "60px" }}
+              style={{ width: "60px", height: "60px", margin: '10px' }}
               alt="link to linkedin profile"
             />
           </a>
@@ -31,7 +31,7 @@ const ContactForm = () => {
           >
             <img
               src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iconsdb.com%2Ficons%2Fdownload%2Fwhite%2Fgithub-10-256.png&f=1&nofb=1"
-              style={{ width: "80px", height: "80px" }}
+              style={{ width: "60px", height: "60px", margin: '10px' }}
               alt="link to gituhb profile"
             />
           </a>

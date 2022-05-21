@@ -53,8 +53,6 @@ html {
     }
 }
 
-// Button Secondary
-
 // NAVBAR
 .navbar {
     position: fixed;
@@ -79,29 +77,29 @@ html {
 }
 
 // Parallax Page
-div[class*='bgimg'] {
-    position: relative;
-    opacity: .65;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+// div[class*='bgimg'] {
+//     position: relative;
+//     opacity: .65;
+//     background-attachment: fixed;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
 
-.bgimg-1 {
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F11%2F35%2FMVeijS.png&f=1&nofb=1');
-    height: 200px;
-}
+// .bgimg-1 {
+//     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F11%2F35%2FMVeijS.png&f=1&nofb=1');
+//     height: 200px;
+// }
 
-.bgimg-2 {
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.outofhours-kidsclub.com%2Fwp-content%2Fuploads%2F2014%2F09%2Fgeneric-background-768x480.jpg&f=1&nofb=1');
-    height: 200px;
-}
+// .bgimg-2 {
+//     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.outofhours-kidsclub.com%2Fwp-content%2Fuploads%2F2014%2F09%2Fgeneric-background-768x480.jpg&f=1&nofb=1');
+//     height: 200px;
+// }
 
-.bgimg-3 {
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcsengineermag.com%2Fwp-content%2Fuploads%2F2019%2F06%2Fbackground_generic_default_image.jpg&f=1&nofb=1');
-    height: 200px;
-}
+// .bgimg-3 {
+//     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcsengineermag.com%2Fwp-content%2Fuploads%2F2019%2F06%2Fbackground_generic_default_image.jpg&f=1&nofb=1');
+//     height: 200px;
+// }
 
 
 // CONTACT FORM
@@ -170,6 +168,7 @@ div[class*='bgimg'] {
     max-width: 40em;
     text-align: center;
     margin: 20px;
+    font-weight: 900;
 }
 
 
@@ -287,6 +286,15 @@ div[class*='bgimg'] {
 // Projects Page
 #projects-container {
     background-color: $accent-color;
+}
+.carousel-text {
+    color: $primary-light;
+    background-color: rgba(0, 0, 0, 0.849);
+    font-weight: 900;
+}
+
+.carousel-image {
+    max-height:400px;
 }
 
 .carousel-indicators {
