@@ -17,7 +17,7 @@ html {
 }
 
 .section-container {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 // Button Primary
@@ -126,7 +126,7 @@ div[class*='bgimg'] {
 #homepage-container {
     background-color: url('');
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-content: center;
     flex-wrap: wrap;
@@ -266,5 +266,5 @@ div[class*='bgimg'] {
 }
 
 .carousel{
-    height: 500px;
+    min-height: 500px;
 }
