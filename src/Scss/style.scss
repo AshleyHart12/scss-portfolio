@@ -121,6 +121,7 @@ div[class*='bgimg'] {
 // HOME PAGE
 #homepage-container {
     background-color: $primary-color;
+    text-align: center;
 }
 
 #homepage-container {
@@ -140,6 +141,11 @@ div[class*='bgimg'] {
     flex-basis: 100%;
 }
 
+.home-page-text {
+    max-width: 40em;
+    text-align: center;
+    margin: 20px;
+}
 
 
 // WELCOME PAGE
