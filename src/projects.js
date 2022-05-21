@@ -2,9 +2,11 @@ import React from "react";
 import "./Scss/style.scss";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
+import { Element } from 'react-scroll';
 
 const Projects = () => {
   return (
+    <Element id='projects' name='projects'>
     <div id="projects-container" className="section-container">
       <Container>
         <Row>
@@ -56,6 +58,7 @@ const Projects = () => {
         </Row>
       </Container>
     </div>
+    </Element>
   );
 };
 

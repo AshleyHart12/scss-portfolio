@@ -1,17 +1,12 @@
 import React from "react";
 import "./Scss/style.scss";
-import { Container, Row, Col, Button, ProgressBar } from "react-bootstrap";
+import { Element } from 'react-scroll';
 
 const Experience = () => {
   return (
+    <Element id='experience' name='experience' className='element'>
     <div id="experience-container" className="section-container">
-      {/* <Container>
-        <Row> */}
           <h1 className="sectionTitle">Experience</h1>
-        {/* </Row> */}
-
-        {/* <Row> */}
-          {/* <Col> */}
           <div style={{margin: '50px', height: 'fit-content'}}>
             <h3 class="progress-title">HTML</h3>
             <div class="progress">
@@ -77,10 +72,8 @@ const Experience = () => {
               </div>
             </div>
             </div>
-          {/* </Col>
-        </Row>
-      </Container> */}
     </div>
+    </Element>
   );
 };
 

@@ -1,20 +1,24 @@
 import React from 'react';
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import './Scss/style.scss';
+import {Link} from 'react-scroll';
+
 
 const Navigation = () => {
     return (
         <Navbar bg="light" expand="lg">
         <Container>
-          {/* <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="./Home">Home</Nav.Link>
-              <Nav.Link href="./experience">Experience</Nav.Link>
-              <Nav.Link href="#link">Projects</Nav.Link>
+            <Link to="home" spy={true} smooth={true} duration={300}>Home</Link>
+              <Link to="experience" spy={true} smooth={true} duration={300}>Experience</Link>
+              <Link to="projects" spy={true} smooth={true} duration={300}>Projects</Link>
+              <Link to="contact" spy={true} smooth={true} duration={300}>Contact</Link>
+              {/* <Nav.Link href="./experience">Experience</Nav.Link> */}
+              {/* <Nav.Link href="#link">Projects</Nav.Link>
               <Nav.Link href="#link">About Me</Nav.Link>
-              <Nav.Link href="./Contact">Contact</Nav.Link>
+              <Nav.Link href="./Contact">Contact</Nav.Link> */}
               {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

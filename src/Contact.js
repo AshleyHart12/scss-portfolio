@@ -1,11 +1,12 @@
 import React from "react";
 import "./Scss/style.scss";
 import Form from "react-bootstrap/Form";
-// import Navigation from "./Navbar";
 import { Container, Button, Row } from "react-bootstrap";
+import { Element } from 'react-scroll';
 
 const ContactForm = () => {
   return (
+    <Element id='contact' name='contact'>
     <div className="section-container" id='contact-container'>
       <Container id="contact-form-container">
         <Row>
@@ -61,6 +62,7 @@ const ContactForm = () => {
         </Form>
       </Container>
     </div>
+    </Element>
   );
 };
 

@@ -1,11 +1,11 @@
 import React from "react";
 import "./Scss/style.scss";
-import Navigation from "./Navbar";
 // import Aframe from './aframe';
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Element } from 'react-scroll';
 
 const HomePageWelcome = () => {
   return (
+    <Element id='home' name='home'>
     <div id="homepage-container" className="section-container">
       <h1 className="sectionTitle">Ashley Hart</h1>
       <div></div>
@@ -25,6 +25,7 @@ const HomePageWelcome = () => {
       </span>
       </div>
     </div>
+    </Element>
   );
 };
 
