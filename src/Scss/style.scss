@@ -17,7 +17,7 @@ html {
 }
 
 .section-container {
-    // min-height: 100vh;
+    min-height: 100vh;
     height: fit-content;
     padding: 15px;
 }
@@ -219,22 +219,6 @@ html {
 }
 
 // Experience Page
-// .progressBar-label {
-//     // flex-basis: 100px;
-//     display: flex;
-//     align-items: center;
-// }
-
-// .progressBar-label p {
-//     margin: 10px;
-//     flex-basis: 10%;
-// }
-
-// .progress-bar {
-//     flex-basis: 100%;
-//     background-color: white;
-// }
-
 #experience-container {
     background-color: $secondary-color;
 }
@@ -294,7 +278,8 @@ html {
 }
 
 .carousel-image {
-    max-height:400px;
+    height:500px;
+    margin-top: 50px;
 }
 
 .carousel-indicators {
@@ -311,5 +296,17 @@ html {
 @media (max-width: 784px) {
     .carousel {
         min-height: 300px;
+    }
+    // .carousel-image {
+    //     margin-top: 100px;
+    // }
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        position: static;
+    }
+    .carousel-image {
+        height: 200px;
     }
 }

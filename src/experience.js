@@ -12,63 +12,63 @@ const Experience = () => {
             <div class="progress">
               <div
                 class="progress-bar"
-                style={{ width: "65%", background: "#FCCD22" }}
+                style={{ width: "80%", background: "#FCCD22" }}
               >
-                <div class="progress-value">65%</div>
+                <div class="progress-value"></div>
               </div>
             </div>
             <h3 class="progress-title">CSS</h3>
             <div class="progress">
               <div
                 class="progress-bar"
-                style={{ width: "75%", background: "#352C09" }}
+                style={{ width: "75%", background: "#F9DBE8" }}
               >
-                <div class="progress-value">100%</div>
+                <div class="progress-value"></div>
               </div>
             </div>
             <h3 class="progress-title">JAVASCRIPT</h3>
             <div class="progress">
               <div
                 class="progress-bar"
-                style={{ width: "75%", background: "#F9DBE8" }}
+                style={{ width: "65%", background: "#357E9B" }}
               >
-                <div class="progress-value">75%</div>
+                <div class="progress-value"></div>
               </div>
             </div>
             <h3 class="progress-title">BOOTSTRAP</h3>
             <div class="progress">
               <div
                 class="progress-bar"
-                style={{ width: "30%", background: "#357E9B" }}
+                style={{ width: "65%", background: "#FCCD22" }}
               >
-                <div class="progress-value">30%</div>
+                <div class="progress-value"></div>
               </div>
             </div>
             <h3 class="progress-title">React</h3>
             <div class="progress">
               <div
                 class="progress-bar"
-                style={{ width: "55%", background: "#FCCD22" }}
+                style={{ width: "60%", background: "#F9DBE8" }}
               >
-                <div class="progress-value">65%</div>
+                <div class="progress-value"></div>
               </div>
             </div>
-            <h3 class="progress-title">Apis</h3>
+            <h3 class="progress-title">APIS</h3>
             <div class="progress">
               <div
                 class="progress-bar"
-                style={{ width: "75%", background: "#352C09" }}
+                style={{ width: "55%", background: "#357E9B" }}
               >
-                <div class="progress-value">100%</div>
+                <div class="progress-value"></div>
               </div>
             </div>
-            <h3 class="progress-title">Something Else</h3>
+            <h3 class="progress-title">GIT</h3>
             <div class="progress">
               <div
                 class="progress-bar"
-                style={{ width: "75%", background: "#F9DBE8" }}
+                style={{ width: "65%", background: "#FCCD22" }}
               >
-                <div class="progress-value">75%</div>
+                <div class="progress-value"></div>
               </div>
             </div>
             </div>

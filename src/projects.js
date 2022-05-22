@@ -5,6 +5,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { Element } from 'react-scroll';
 import Localeyz from './images/Localeyz.png';
 import Vantage from './images/Vantage.png';
+import ProjectThree from './images/projectThreeImage.png'
 
 const Projects = () => {
   return (
@@ -41,21 +42,22 @@ const Projects = () => {
                 <p class='carousel-text'>Part of my work with Vantage Ltd, I helped build out components for an app that allowed Water Parl guests to log in, choose playlists for rides, find others in the park, etc. This was built with Angular Bootstrap, and Jquery</p>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+             <Carousel.Item>
+             <a href='https://github.com/AshleyHart12/Project-Three-Time-to-Kill' target='_blank' rel='noopener noreferrer'>
               <img
                 className="d-block w-100 carousel-image"
-                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F10%2FPoint-Blank-Background.jpg&f=1&nofb=1"
+                src={ProjectThree}
                 alt="Third slide"
-              />
-
+              /> 
+               </a>
               <Carousel.Caption>
-                <h3 class='carousel-text'>Third slide label</h3>
+                <h3 class='carousel-text'>Time To Kill</h3>
                 <p class='carousel-text'>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
+                  The final project of coding bootcamp, this was a group project made with React, Bootstrap, Express, MongoDB, and Passport.js
                 </p>
               </Carousel.Caption>
             </Carousel.Item>
+
           </Carousel>
         </Row>
       </Container>
