@@ -37,6 +37,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 5rem;
+    font-weight: 900;
 
     &:disabled {
         opacity: .5;
@@ -77,14 +78,17 @@ html {
 }
 
 // Parallax Page
-// div[class*='bgimg'] {
-//     position: relative;
-//     opacity: .65;
-//     background-attachment: fixed;
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
+div[class*='bgimg'] {
+    position: relative;
+    opacity: .65;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fa2%2F4e%2F52%2Fa24e52669efb74b142c2cf1f32819a3f.jpg&f=1&nofb=1');
+}
 
 // .bgimg-1 {
 //     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F11%2F35%2FMVeijS.png&f=1&nofb=1');
@@ -175,6 +179,7 @@ html {
 // WELCOME PAGE
 .image {
     height: 300px;
+    // filter: grayscale(100%);
 
     &.img1 {
         background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fthewowstyle.com%2Fwp-content%2Fuploads%2F2015%2F01%2Fnature-images.jpg&f=1&nofb=1');
@@ -271,42 +276,60 @@ html {
 #projects-container {
     background-color: $accent-color;
 }
-.carousel-text {
-    color: $primary-light;
-    background-color: rgba(0, 0, 0, 0.849);
+
+.projectImage {
+    height: 180px;
+    margin-top: 10px;
+}
+
+.projectButton {
+    margin-top: 2rem;
     font-weight: 900;
+    outline: none;
 }
 
-.carousel-image {
-    height:500px;
-    margin-top: 50px;
+.projectButton:focus {
+    box-shadow: none;
+    border: none;
 }
+// .carousel-text {
+//     color: $primary-light;
+//     background-color: rgba(0, 0, 0, 0.849);
+//     font-weight: 900;
+// }
 
-.carousel-indicators {
-    position: relative;
-}
-.carousel-indicators{
-    display: none;
-}
+// .carousel-image {
+//     height:500px;
+//     margin-top: 50px;
+// }
 
-.carousel{
-    min-height: 500px;
-}
+// .carousel-indicators {
+//     position: relative;
+// }
+// .carousel-indicators{
+//     display: none;
+// }
 
-@media (max-width: 784px) {
-    .carousel {
-        min-height: 300px;
-    }
-    // .carousel-image {
-    //     margin-top: 100px;
-    // }
-}
+// .carousel{
+//     min-height: 500px;
+// }
 
-@media (max-width: 600px) {
-    .carousel-caption {
-        position: static;
-    }
-    .carousel-image {
-        height: 200px;
-    }
-}
+// @media (max-width: 784px) {
+//     .carousel {
+//         min-height: 300px;
+//     }
+//     // .carousel-image {
+//     //     margin-top: 100px;
+//     // }
+// }
+
+// @media (max-width: 600px) {
+//     .carousel-caption {
+//         position: static;
+//     }
+//     .carousel-image {
+//         height: 200px;
+//     }
+// }
+
+

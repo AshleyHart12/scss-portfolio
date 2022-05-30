@@ -8,11 +8,11 @@ const Experience = () => {
     <div id="experience-container" className="section-container">
           <h1 className="sectionTitle">Experience</h1>
           <div style={{margin: '50px', height: 'fit-content'}}>
-            <h3 class="progress-title">HTML</h3>
+            <h3 class="progress-title">SCSS</h3>
             <div class="progress">
               <div
                 class="progress-bar"
-                style={{ width: "80%", background: "#FCCD22" }}
+                style={{ width: "40%", background: "#FCCD22" }}
               >
                 <div class="progress-value"></div>
               </div>
