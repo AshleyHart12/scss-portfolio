@@ -2,14 +2,14 @@ import React from "react";
 import "./Scss/style.scss";
 // import Aframe from './aframe';
 import { Element } from 'react-scroll';
-import { Typewriter } from 'react-typewriting-effect'
-import 'react-typewriting-effect/dist/index.css';
+// import { Typewriter } from 'react-typewriting-effect';
+// import 'react-typewriting-effect/dist/index.css';
 
 const HomePageWelcome = () => {
   return (
     <Element id='home' name='home'>
     <div id="homepage-container" className="section-container">
-      <h1 className="sectionTitle"><Typewriter string='Ashley Hart' delay={80} /></h1>
+      <h1 className="sectionTitle">Ashley Hart</h1>
       <div></div>
       <div class='home-page-text'>
       <span>Welcome!</span>
