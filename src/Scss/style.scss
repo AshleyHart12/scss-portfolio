@@ -140,6 +140,15 @@ div[class*='bgimg'] {
     // box-shadow: inset 10px 5px 5px gray;
 }
 
+#form-submit {
+    width: 150px;
+    margin-top: 50px;
+}
+
+input {
+    padding: 10px;
+}
+
 #contact-container {
     background-color: $text-color;
 }
@@ -280,6 +289,10 @@ div[class*='bgimg'] {
 .projectImage {
     height: 180px;
     margin-top: 10px;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 
 .projectButton {
