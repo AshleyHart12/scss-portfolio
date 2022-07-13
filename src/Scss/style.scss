@@ -3,13 +3,43 @@
 @import './_variables';
 @import './mixins';
 
+.theme-bright {
+    #homepage-container  {
+        background-color: $primary-color;
+    }
+}
+
+.theme-muted {
+    #homepage-container {
+        background-color: $primary-muted
+    }
+    #experience-container {
+        background-color: rgb(243, 235, 245);
+    }
+    #projects-container {
+        background-color: rgb(228, 221, 230);
+    }
+    #contact-container {
+        background-color: rgb(218, 209, 220);
+    }
+    #form-submit {
+        background: repeat padding-box border-box 0% 0%/auto auto scroll linear-gradient(180deg, rgba(82, 38, 98, 0.75) 0%, rgba(82, 38, 98, 0.75) 100%), repeat padding-box border-box 50% 9%/50%, #FFFFFF;
+        border: none;
+    }
+     h1, .progress-title {
+        color: $text-color-muted
+     }
+}
+
 body {
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Kanit', sans-serif;   
 } 
 
-html {
+html, #root {
     scroll-behavior: smooth;
   }
+
+  
 
 // GLOBALS 
 .sectionTitle {
@@ -27,6 +57,11 @@ html {
         padding: 50px;
     }
 }
+
+
+
+
+
 
 // Button Primary
 .btn {
@@ -60,6 +95,8 @@ html {
     top: 0;
     width: 100%;
     z-index: 1;
+    background-color: rgba(230, 223, 233, 0.815);
+    box-shadow: 0px 5px 10px rgba(188, 181, 192, 0.676);
 }
 
  .navbar-nav{
@@ -77,6 +114,8 @@ html {
     margin-right: 10px;
 }
 
+// Toggle Button
+
 // Parallax Page
 div[class*='bgimg'] {
     position: relative;
@@ -89,21 +128,6 @@ div[class*='bgimg'] {
     height: 100px;
     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fa2%2F4e%2F52%2Fa24e52669efb74b142c2cf1f32819a3f.jpg&f=1&nofb=1');
 }
-
-// .bgimg-1 {
-//     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F11%2F35%2FMVeijS.png&f=1&nofb=1');
-//     height: 200px;
-// }
-
-// .bgimg-2 {
-//     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.outofhours-kidsclub.com%2Fwp-content%2Fuploads%2F2014%2F09%2Fgeneric-background-768x480.jpg&f=1&nofb=1');
-//     height: 200px;
-// }
-
-// .bgimg-3 {
-//     background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcsengineermag.com%2Fwp-content%2Fuploads%2F2019%2F06%2Fbackground_generic_default_image.jpg&f=1&nofb=1');
-//     height: 200px;
-// }
 
 
 // CONTACT FORM
@@ -156,17 +180,12 @@ input {
 
 // HOME PAGE
 #homepage-container {
-    background-color: $primary-color;
-    text-align: center;
-}
-
-#homepage-container {
-    background-color: url('');
     justify-content: center;
     min-height: 100vh;
     display: flex;
     align-content: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 #homepage-container p {
@@ -291,6 +310,53 @@ input {
     margin-top: 10px;
 }
 
+.projectImageModal {
+    height: 15em;
+    width: 18em;
+}
+
+.projectImageModal:hover {
+    height: 16em;
+    width: 19em;
+    transform: rotate(7deg);
+}
+
+.modalPopUpLeft {
+    width: 65%;
+}
+
+.modalPopUpRight {
+    width: 45%;
+}
+
+.modal-content {
+    flex-direction: row;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.modal-header {
+    border-bottom: none;
+    justify-content: center;
+}
+
+.modalCard {
+    padding: 10px;
+}
+
+.modalTitleLink {
+    text-decoration: none;
+}
+
+.modalCloseButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2em;
+    background-color: $secondary-color;
+    color: white;
+}
+
 .card {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
@@ -305,44 +371,3 @@ input {
     box-shadow: none;
     border: none;
 }
-// .carousel-text {
-//     color: $primary-light;
-//     background-color: rgba(0, 0, 0, 0.849);
-//     font-weight: 900;
-// }
-
-// .carousel-image {
-//     height:500px;
-//     margin-top: 50px;
-// }
-
-// .carousel-indicators {
-//     position: relative;
-// }
-// .carousel-indicators{
-//     display: none;
-// }
-
-// .carousel{
-//     min-height: 500px;
-// }
-
-// @media (max-width: 784px) {
-//     .carousel {
-//         min-height: 300px;
-//     }
-//     // .carousel-image {
-//     //     margin-top: 100px;
-//     // }
-// }
-
-// @media (max-width: 600px) {
-//     .carousel-caption {
-//         position: static;
-//     }
-//     .carousel-image {
-//         height: 200px;
-//     }
-// }
-
-

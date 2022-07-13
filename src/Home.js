@@ -2,15 +2,25 @@ import React from "react";
 import "./Scss/style.scss";
 // import Aframe from './aframe';
 import { Element } from 'react-scroll';
-// import { Typewriter } from 'react-typewriting-effect';
-// import 'react-typewriting-effect/dist/index.css';
+// import Typed from "react-typed";
 
 const HomePageWelcome = () => {
   return (
     <Element id='home' name='home'>
     <div id="homepage-container" className="section-container">
-      <h1 className="sectionTitle">Ashley Hart</h1>
-      <div></div>
+    {/* <Typed
+      strings={[
+            "I'm a Full Stack Developer",
+            "I Love Software Development",
+            "I Love All My Subscribers",
+          ]}
+          typeSpeed={150}
+          backSpeed={100}
+          loop
+        /> */}
+      <div>
+         <h1 class='sectionTitle'>Ashley Hart</h1>
+      </div>
       <div class='home-page-text'>
       <span>Welcome!</span>
       <br/>
