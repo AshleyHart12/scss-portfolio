@@ -59,10 +59,6 @@ html, #root {
 }
 
 
-
-
-
-
 // Button Primary
 .btn {
     padding: 5px 15px;
@@ -115,6 +111,76 @@ html, #root {
 }
 
 // Toggle Button
+input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 0px;
+    height: 0px;
+  }
+  
+  input[type=checkbox]:checked:before {
+        content: "";
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border: 4px solid $text-color-muted;
+    border-radius: 20px;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg00.deviantart.net%2F903c%2Fi%2F2015%2F082%2F9%2Fe%2Fmoon_transparent_by_ken_griffith-d8mtcqk.png&f=1&nofb=1');  
+    transition: all 0.2s linear;
+    background-color: $primary-muted;
+  }
+  
+  
+  input[type=checkbox]:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border: 4px solid $primary-light;
+    border-radius: 3px;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fopenclipart.org%2Fimage%2F2400px%2Fsvg_to_png%2F69433%2F1277948317.png&f=1&nofb=1');
+    background-size: 100%;
+    background-color: $primary-color;
+  }
+
+  .container-toggle {
+    margin-right: 40px;
+    margin-bottom: 5px;
+  }
+  
+  
+//   input[type=checkbox]:after {
+//     content: "";
+//     display: block;
+//     width: 0px;
+//     height: 0px;
+//     // border: solid #FFCB9A;
+//     border-width: 0 0px 0px 0;
+//     -webkit-transform: rotate(180deg);
+//     -ms-transform: rotate(180deg);
+//     transform: rotate(180deg);
+//     position: absolute;
+//     top: 0px;
+//     left: 50px;
+//     transition: all 0.2s linear;
+//   }
+  
+//   input[type=checkbox]:checked:after {
+//     content: "";
+//     display: block;
+//     width: 12px;
+//     height: 21px;
+//     // border: solid #FFCB9A;
+//     border-width: 0 5px 5px 0;
+//     -webkit-transform: rotate(45deg);
+//     -ms-transform: rotate(45deg);
+//     transform: rotate(45deg);
+//     position: absolute;
+//     top: 2px;
+//     left: 14px;
+//   }
 
 // Parallax Page
 div[class*='bgimg'] {
