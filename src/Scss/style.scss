@@ -29,6 +29,10 @@
      h1, .progress-title {
         color: $text-color-muted
      }
+     h2, h5 {
+        font-weight: 900;
+        color: $text-color-muted
+     }
 }
 
 body {
@@ -150,37 +154,7 @@ input[type=checkbox] {
     margin-bottom: 5px;
   }
   
-  
-//   input[type=checkbox]:after {
-//     content: "";
-//     display: block;
-//     width: 0px;
-//     height: 0px;
-//     // border: solid #FFCB9A;
-//     border-width: 0 0px 0px 0;
-//     -webkit-transform: rotate(180deg);
-//     -ms-transform: rotate(180deg);
-//     transform: rotate(180deg);
-//     position: absolute;
-//     top: 0px;
-//     left: 50px;
-//     transition: all 0.2s linear;
-//   }
-  
-//   input[type=checkbox]:checked:after {
-//     content: "";
-//     display: block;
-//     width: 12px;
-//     height: 21px;
-//     // border: solid #FFCB9A;
-//     border-width: 0 5px 5px 0;
-//     -webkit-transform: rotate(45deg);
-//     -ms-transform: rotate(45deg);
-//     transform: rotate(45deg);
-//     position: absolute;
-//     top: 2px;
-//     left: 14px;
-//   }
+
 
 // Parallax Page
 div[class*='bgimg'] {
@@ -267,6 +241,41 @@ input {
     text-align: center;
     margin: 20px;
     font-weight: 900;
+}
+
+@keyframes throbbingHeart {
+    from {width: 20px;}
+    to {width: 25px }
+}
+
+#homePageHeart {
+    animation: throbbingHeart infinite 1.5s alternate;
+}
+
+.title-word {
+    animation: titleColor 4s linear infinite;
+}
+
+.title-word1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+}
+
+@keyframes titleColor {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
 }
 
 
@@ -372,8 +381,13 @@ input {
 }
 
 .projectImage {
-    height: 180px;
+    height: 210px;
     margin-top: 10px;
+    width: 350px;
+}
+
+.project-column-right {
+    text-align: center;
 }
 
 .projectImageModal {
